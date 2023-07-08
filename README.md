@@ -6,7 +6,7 @@ http://localhost:8001/<br />
 
 ## Commands to remember:
 docker compose up -d<br />
-docker exec -it simple-laravel-cms-laravel.test-1<br />
+docker exec -it simple-laravel-cms-laravel.test-1 /bin/bash<br />
 composer install (inside docker exec)<br />
 php artisan migrate:refresh --seed (for seeding database with test data from factories)<br />
 
