@@ -3,14 +3,18 @@
 ## Ports:
 http://localhost/<br />
 http://localhost:8001/<br />
+http://localhost/console/dashboard/<br />
 
-## Commands to remember:
-docker compose up -d<br />
+## Install:
+cd simple-laravel-cms<br />
+sudo mv .env.example .env<br />
+composer install<br />
+php artisan key:generate<br />
+./vendor/bin/sail up<br />
 docker exec -it simple-laravel-cms-laravel.test-1 /bin/bash<br />
-composer install (inside docker exec)<br />
-php artisan migrate:refresh --seed (for seeding database with test data from factories)<br />
+php artisan storage:link<br />
 
 ## Other reminder things:
-Copy .env.example and paste a password for mysql<br />
-php artisan key:generate (inside docker exec)<br />
+Use one of the seeded emails from db to login, the password will always be "password" when using seeded data.<br />
+
 
