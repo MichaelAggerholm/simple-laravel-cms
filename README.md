@@ -13,6 +13,7 @@ php artisan key:generate<br />
 ./vendor/bin/sail up<br />
 docker exec -it simple-laravel-cms-laravel.test-1 /bin/bash<br />
 php artisan storage:link<br />
+php artisan migrate:refresh --seed<br />
 
 ## Other reminder things:
 Use one of the seeded emails from db to login, the password will always be "password" when using seeded data.<br />
